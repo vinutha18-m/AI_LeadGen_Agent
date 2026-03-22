@@ -555,9 +555,9 @@ class BarkAgent:
 
 async def main():
     agent = BarkAgent(
-        email    = os.getenv("BARK_EMAIL", "1ms24rai13@msrit.edu"),
-        password = os.getenv("BARK_PASSWORD", "Vinutha@2025"),
-        anthropic_api_key = os.getenv("ANTHROPIC_API_KEY", "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"),
+        email    = os.getenv("BARK_EMAIL", ""),
+        password = os.getenv("BARK_PASSWORD", ""),
+        anthropic_api_key = os.getenv("ANTHROPIC_API_KEY", ""),
         demo_mode = True,       # ← set False to run against real Bark.com
         headless  = False,
     )
